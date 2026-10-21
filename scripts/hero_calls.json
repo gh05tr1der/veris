@@ -1,0 +1,443 @@
+{
+  "_comment": "Source scripts for the five demo calls. `text` is what an ASR would emit; `say` (optional) is what the speech synthesiser reads when it differs (digits, codes). `at` = absolute start in seconds, `gap` = seconds after the previous utterance ends, `endAt` = place the utterance so it ends at this time (used to stage an interruption). Run scripts/synthesize_audio.py to regenerate public/audio/*.mp3 and src/data/generated/heroTimings.json.",
+  "calls": [
+    {
+      "id": "VRS-INS-0412",
+      "voices": {
+        "agent": "en-us+m3",
+        "customer": "en-gb+f4"
+      },
+      "utterances": [
+        {
+          "s": "agent",
+          "at": 2.5,
+          "text": "Thank you for calling Suraksha General Insurance, this is Rohan. How may I help you today?"
+        },
+        {
+          "s": "customer",
+          "gap": 0.7,
+          "text": "Hi, yes. I want to cancel my motor insurance policy. The policy number is MV22049173.",
+          "say": "Hi, yes. I want to cancel my motor insurance policy. The policy number is M V 2 2 0 4 9 1 7 3."
+        },
+        {
+          "s": "agent",
+          "text": "Sure, I can help with that. For verification, could you please confirm your date of birth?",
+          "gap": 0.7
+        },
+        {
+          "s": "customer",
+          "gap": 0.6,
+          "text": "It's 14 March 1989.",
+          "say": "It's the fourteenth of March, nineteen eighty nine."
+        },
+        {
+          "s": "agent",
+          "gap": 0.9,
+          "text": "Thank you, Ms. Nair. I can see the policy on your Hyundai Creta, with comprehensive cover valid until 20 February.",
+          "say": "Thank you, Ms. Nair. I can see the policy on your Hyundai Creta, with comprehensive cover valid until the twentieth of February."
+        },
+        {
+          "s": "agent",
+          "gap": 0.6,
+          "text": "I can also see that this year's premium is fully paid. May I know the reason for the cancellation?"
+        },
+        {
+          "s": "customer",
+          "text": "Right. Look, I sold the car last week and I really don't have much time, so I just want this cancelled today.",
+          "gap": 0.7
+        },
+        {
+          "s": "agent",
+          "gap": 0.8,
+          "text": "Okay. And has the vehicle already been transferred to the new owner?"
+        },
+        {
+          "s": "customer",
+          "text": "Yes, the transfer was done on Monday. And honestly, I was told on chat that this would take two minutes, and I have already been waiting on hold for",
+          "gap": 0.7
+        },
+        {
+          "s": "agent",
+          "text": "Okay, okay, I will do it right away.",
+          "overlap": 1.4
+        },
+        {
+          "s": "customer",
+          "gap": 0.8,
+          "text": "Fine."
+        },
+        {
+          "s": "agent",
+          "text": "Alright, so I'll go ahead and process that cancellation for you now. The policy will be cancelled from today.",
+          "gap": 1.2
+        },
+        {
+          "s": "customer",
+          "gap": 0.8,
+          "text": "Okay, good. Will I get a refund for the remaining months?"
+        },
+        {
+          "s": "agent",
+          "gap": 0.8,
+          "text": "Yes, the unused premium is refunded. Let me just complete the request in the system."
+        },
+        {
+          "s": "agent",
+          "text": "One more thing, there will be a cancellation charge of 850 rupees, which is deducted from the refund.",
+          "say": "One more thing, there will be a cancellation charge of eight hundred and fifty rupees, which is deducted from the refund.",
+          "gap": 14.0
+        },
+        {
+          "s": "customer",
+          "text": "Wait, you didn't tell me that before. Why am I only hearing about this now? That is really not fair.",
+          "gap": 0.4
+        },
+        {
+          "s": "customer",
+          "gap": 1.2,
+          "text": "I would not have agreed so quickly if I had known about a charge."
+        },
+        {
+          "s": "agent",
+          "text": "I completely understand your frustration, and I apologise. I should have explained the charge before confirming. The charge is fixed in the policy wording for mid-term cancellation. Your refund is calculated pro-rata, so you will receive the unused premium for the remaining four months, minus the 850 rupee charge, within seven working days.",
+          "say": "I completely understand your frustration, and I apologise. I should have explained the charge before confirming. The charge is fixed in the policy wording for mid term cancellation. Your refund is calculated pro rata, so you will receive the unused premium for the remaining four months, minus the eight hundred and fifty rupee charge, within seven working days.",
+          "gap": 1.0
+        },
+        {
+          "s": "customer",
+          "gap": 0.9,
+          "text": "Okay. Fine. At least that is clear now."
+        },
+        {
+          "s": "agent",
+          "gap": 0.7,
+          "text": "You will receive the confirmation on your registered email, priya.nair89@gmail.com.",
+          "say": "You will receive the confirmation on your registered email, priya dot nair eighty nine at gmail dot com."
+        },
+        {
+          "s": "agent",
+          "gap": 0.8,
+          "text": "Thank you for calling Suraksha General. Goodbye."
+        }
+      ]
+    },
+    {
+      "id": "VRS-INS-0388",
+      "voices": {
+        "agent": "en-gb+f2",
+        "customer": "en-us+m1"
+      },
+      "utterances": [
+        {
+          "s": "agent",
+          "at": 1.5,
+          "text": "Thank you for calling Suraksha General Insurance, protecting every journey. This is Ananya. This call is recorded for quality and training. How can I help you?"
+        },
+        {
+          "s": "customer",
+          "gap": 0.7,
+          "text": "Hello. I want to cancel my car insurance. I have moved to Dubai and the car is sold."
+        },
+        {
+          "s": "agent",
+          "gap": 0.8,
+          "text": "Of course, I can help you with that. Before we look at the policy, may I have your date of birth and the registered mobile number on the policy?"
+        },
+        {
+          "s": "customer",
+          "gap": 0.6,
+          "text": "Date of birth is 2 June 1984 and the mobile is 98301 22456.",
+          "say": "Date of birth is the second of June, nineteen eighty four, and the mobile is nine eight three zero one, two two four five six."
+        },
+        {
+          "s": "agent",
+          "gap": 0.9,
+          "text": "Thank you, Mr. Bose, you are verified. I can see your policy on a Honda City, valid until next March."
+        },
+        {
+          "s": "agent",
+          "gap": 0.6,
+          "text": "Before I process this, please note that a mid-term cancellation carries a cancellation charge of 850 rupees, deducted from your refund. The unused premium is refunded pro-rata within seven working days.",
+          "say": "Before I process this, please note that a mid term cancellation carries a cancellation charge of eight hundred and fifty rupees, deducted from your refund. The unused premium is refunded pro rata within seven working days."
+        },
+        {
+          "s": "customer",
+          "gap": 0.8,
+          "text": "Hmm, I didn't know about the charge, but okay, that is fine. Please go ahead."
+        },
+        {
+          "s": "agent",
+          "gap": 0.7,
+          "text": "Thank you for confirming. I am now cancelling the policy with effect from today."
+        },
+        {
+          "s": "agent",
+          "gap": 0.6,
+          "text": "Just to summarise, the policy is cancelled from today, the 850 rupee charge is deducted, and the balance will reach your bank account within seven working days.",
+          "say": "Just to summarise, the policy is cancelled from today, the eight hundred and fifty rupee charge is deducted, and the balance will reach your bank account within seven working days."
+        },
+        {
+          "s": "customer",
+          "gap": 0.7,
+          "text": "Perfect, that is very clear. Thank you."
+        },
+        {
+          "s": "agent",
+          "gap": 0.6,
+          "text": "Is there anything else I can help you with today?"
+        },
+        {
+          "s": "customer",
+          "gap": 0.6,
+          "text": "No, that is all."
+        },
+        {
+          "s": "agent",
+          "gap": 0.6,
+          "text": "Thank you for choosing Suraksha General. Have a safe move, goodbye."
+        }
+      ]
+    },
+    {
+      "id": "VRS-CRD-0907",
+      "voices": {
+        "agent": "en-gb+f3",
+        "customer": "en-us+m4"
+      },
+      "utterances": [
+        {
+          "s": "agent",
+          "at": 1.5,
+          "text": "Namaste, Unity Bank mein aapka swagat hai, main Neha baat kar rahi hoon. Yeh call quality aur training ke liye record ki ja rahi hai. Bataiye, main aapki kya help kar sakti hoon?"
+        },
+        {
+          "s": "customer",
+          "gap": 0.7,
+          "text": "Haan, mere credit card se ek transaction hua hai jo maine nahi kiya. Twelve thousand rupees ka, kisi online site pe. I am really worried."
+        },
+        {
+          "s": "agent",
+          "gap": 0.8,
+          "text": "Main samajh sakti hoon, aap tension mat lijiye, hum abhi isko secure kar dete hain. Verification ke liye please apni date of birth bataiye."
+        },
+        {
+          "s": "customer",
+          "gap": 0.6,
+          "text": "2 August 1992.",
+          "say": "Second August, nineteen ninety two."
+        },
+        {
+          "s": "agent",
+          "gap": 0.7,
+          "text": "Thank you. Aur registered mobile number ke last four digits?"
+        },
+        {
+          "s": "customer",
+          "gap": 0.6,
+          "text": "4417.",
+          "say": "Four four one seven."
+        },
+        {
+          "s": "agent",
+          "gap": 0.8,
+          "text": "Thank you, verification complete. Main dekh rahi hoon, aaj subah 10:42 pe twelve thousand ka transaction hai, merchant ShopKart Online.",
+          "say": "Thank you, verification complete. Main dekh rahi hoon, aaj subah ten forty two pe twelve thousand ka transaction hai, merchant ShopKart Online."
+        },
+        {
+          "s": "customer",
+          "gap": 0.6,
+          "text": "Haan, wahi. Maine woh nahi kiya."
+        },
+        {
+          "s": "agent",
+          "gap": 0.8,
+          "text": "Theek hai. Main abhi aapka card block kar rahi hoon taaki aur koi transaction na ho. Card block ho gaya hai. Ab main dispute raise kar rahi hoon, aapka reference number hai DR4582.",
+          "say": "Theek hai. Main abhi aapka card block kar rahi hoon taaki aur koi transaction na ho. Card block ho gaya hai. Ab main dispute raise kar rahi hoon, aapka reference number hai D R four five eight two."
+        },
+        {
+          "s": "customer",
+          "gap": 0.7,
+          "text": "Paisa wapas kab tak aayega?"
+        },
+        {
+          "s": "agent",
+          "gap": 0.8,
+          "text": "Dispute process mein usually seven se ten working days lagte hain. Agar transaction fraudulent confirm hota hai, toh amount aapke account mein credit ho jayega. Naya card aapke registered address pe five working days mein pahunch jayega."
+        },
+        {
+          "s": "customer",
+          "gap": 0.7,
+          "text": "Okay, theek hai. Thank you."
+        },
+        {
+          "s": "agent",
+          "gap": 0.6,
+          "text": "Kya main aapki aur kisi cheez mein madad kar sakti hoon?"
+        },
+        {
+          "s": "customer",
+          "gap": 0.6,
+          "text": "Nahi, bas itna hi."
+        },
+        {
+          "s": "agent",
+          "gap": 0.6,
+          "text": "Unity Bank ko call karne ke liye dhanyavaad. Aapka din shubh ho."
+        }
+      ]
+    },
+    {
+      "id": "VRS-COL-1131",
+      "voices": {
+        "agent": "en-us+m7",
+        "customer": "en-gb+m2"
+      },
+      "utterances": [
+        {
+          "s": "agent",
+          "at": 1.0,
+          "text": "Good afternoon, this is Vikram calling from Unity Bank collections. This call is recorded. Am I speaking with Mr. Arjun Rao?"
+        },
+        {
+          "s": "customer",
+          "gap": 0.7,
+          "text": "Yes, speaking."
+        },
+        {
+          "s": "agent",
+          "gap": 0.6,
+          "text": "For security, can you confirm your date of birth and the last four digits of your registered mobile number?"
+        },
+        {
+          "s": "customer",
+          "gap": 0.7,
+          "text": "9 November 1985. And the last four digits are 7702.",
+          "say": "Ninth November, nineteen eighty five. And the last four digits are seven seven zero two."
+        },
+        {
+          "s": "agent",
+          "gap": 0.8,
+          "text": "Thank you. I am calling about your personal loan. The EMI of 18,400 rupees due on 5 October is overdue, and with the late fee of 590 rupees the total outstanding is 18,990 rupees.",
+          "say": "Thank you. I am calling about your personal loan. The E M I of eighteen thousand four hundred rupees due on the fifth of October is overdue, and with the late fee of five hundred and ninety rupees the total outstanding is eighteen thousand nine hundred and ninety rupees."
+        },
+        {
+          "s": "customer",
+          "gap": 0.9,
+          "text": "I know. I lost my job in August, and I am trying to arrange the money. Can I get some more time?"
+        },
+        {
+          "s": "agent",
+          "gap": 0.5,
+          "text": "Sir, everyone says that. You need to pay this by tonight. If you don't, we will send our team to your house and inform your employer and your relatives."
+        },
+        {
+          "s": "customer",
+          "gap": 0.6,
+          "text": "What? You cannot do that. That is harassment."
+        },
+        {
+          "s": "agent",
+          "gap": 0.5,
+          "text": "Then make the payment. I can send you the link right now."
+        },
+        {
+          "s": "customer",
+          "gap": 0.7,
+          "text": "I want to speak to your supervisor."
+        },
+        {
+          "s": "agent",
+          "gap": 0.8,
+          "text": "Fine, I will raise a callback request. Is there anything else?"
+        },
+        {
+          "s": "customer",
+          "gap": 0.6,
+          "text": "No."
+        },
+        {
+          "s": "agent",
+          "gap": 0.5,
+          "text": "Thank you. Goodbye."
+        }
+      ]
+    },
+    {
+      "id": "VRS-CRD-0951",
+      "voices": {
+        "agent": "en-us+m2",
+        "customer": "en-gb+f1"
+      },
+      "utterances": [
+        {
+          "s": "agent",
+          "at": 1.5,
+          "text": "Good morning, thank you for calling Unity Bank cards, my name is Karthik. How can I help you today?"
+        },
+        {
+          "s": "customer",
+          "gap": 0.7,
+          "text": "Hi. I have been charged twice for the same hotel booking on my credit card. The card number is 4539 1488 0343 6467.",
+          "say": "Hi. I have been charged twice for the same hotel booking on my credit card. The card number is four five three nine, one four eight eight, zero three four three, six four six seven."
+        },
+        {
+          "s": "agent",
+          "gap": 0.8,
+          "text": "Thank you. Please don't share the full card number on a call, I only need to verify you. Could you confirm your date of birth and the PAN registered with us?"
+        },
+        {
+          "s": "customer",
+          "gap": 0.7,
+          "text": "Sorry. Date of birth is 21 January 1990 and the PAN is BQKPM4321L.",
+          "say": "Sorry. Date of birth is the twenty first of January, nineteen ninety, and the PAN is B Q K P M four three two one L."
+        },
+        {
+          "s": "agent",
+          "gap": 0.8,
+          "text": "Thank you, Ms. Menon, you are verified. I can see two charges of 9,600 rupees from Lakeview Residency on 3 October.",
+          "say": "Thank you, Ms. Menon, you are verified. I can see two charges of nine thousand six hundred rupees from Lakeview Residency on the third of October."
+        },
+        {
+          "s": "customer",
+          "gap": 0.6,
+          "text": "Yes, that is the one. It is frustrating, because the hotel told me to call the bank."
+        },
+        {
+          "s": "agent",
+          "gap": 0.7,
+          "text": "I understand, and I am sorry for the trouble. I have raised a duplicate charge dispute. The second charge will be reversed as a temporary credit within three working days, while we confirm with the merchant."
+        },
+        {
+          "s": "customer",
+          "gap": 0.6,
+          "text": "Okay, will I be charged interest on it meanwhile?"
+        },
+        {
+          "s": "agent",
+          "gap": 0.7,
+          "text": "No, the disputed amount is excluded from interest and the minimum due until the dispute is closed. You will get an SMS with the dispute number."
+        },
+        {
+          "s": "customer",
+          "gap": 0.6,
+          "text": "Great, thank you."
+        },
+        {
+          "s": "agent",
+          "gap": 0.6,
+          "text": "Is there anything else I can do for you today?"
+        },
+        {
+          "s": "customer",
+          "gap": 0.5,
+          "text": "No, that is all."
+        },
+        {
+          "s": "agent",
+          "gap": 0.6,
+          "text": "Thank you for banking with Unity Bank. Have a good day."
+        }
+      ]
+    }
+  ]
+}
